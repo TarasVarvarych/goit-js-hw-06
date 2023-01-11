@@ -8,10 +8,11 @@ const numberOfBoxes = document.querySelector('[type="number"]');
 const destroyBoxes = () => {
   thumbEl.innerHTML = "";
 };
+let boxesCollection;
+
 destroyBtn.addEventListener("click", destroyBoxes);
 function onInputChange(event) {
   let number = event.currentTarget.value;
-  let boxesCollection;
   function createBoxes(amount) {
     const array = [];
     for (let i = 1; i <= number; i += 1) {
