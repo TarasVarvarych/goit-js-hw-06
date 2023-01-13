@@ -4,4 +4,4 @@ console.log(inputEl.value);
 const onInputChange = (event) => {
   text.style.fontSize = `${event.currentTarget.value}px`;
 };
-inputEl.addEventListener("change", onInputChange);
+inputEl.addEventListener("input", onInputChange);
